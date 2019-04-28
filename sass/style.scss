@@ -1,0 +1,92 @@
+.container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: flex-start;
+}
+//sidebar styles
+sidebar {
+    width: 160px;
+    background: #2f3032;
+    height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .logo {
+        font-family: 'Fredoka One', cursive;
+        font-size: 30px;
+        color: #c7af83;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .menu-button {
+        color: white;
+        height: 40px;
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-button:hover {
+        background: #252628;
+        border-left: 4px solid #c7af83;
+    }
+    .languages {
+        margin-top: 280px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 15px;
+
+        .eng {
+            margin-left: 5px;
+        }
+    }
+    .social-media {
+        color: white;
+        margin-top: 15px;
+
+        .fab {
+            margin: 0 5px;
+        }
+    }
+}
+
+.main-container {
+    width: 1240px;
+    padding: 50px;
+}
+//header styles
+header {
+    .toolbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .fas {
+            font-size: 25px;
+        }
+
+        .user {
+            .fas {
+                margin: 0 15px;
+                font-size: 25px;
+                color: #b2b2b2;
+            }
+            .fa-bell {
+                position: relative;
+            }
+            .fa-bell:after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 7px;
+                width: 7px;
+                top: -1px;
+                right: -4px;
+                background: red;
+                border-radius: 50%;
+            }
+        }
+    }
+}
