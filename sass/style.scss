@@ -1,13 +1,14 @@
 .container {
     max-width: 1400px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
 }
 //sidebar styles
 sidebar {
     width: 160px;
     background: #2f3032;
-    height: -webkit-fill-available;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -29,7 +30,8 @@ sidebar {
     }
     .menu-button:hover {
         background: #252628;
-        border-left: 4px solid #c7af83;
+        border-left: 4px solid #d9be8f;
+        cursor: pointer;
     }
     .languages {
         margin-top: 280px;
@@ -88,5 +90,84 @@ header {
                 border-radius: 50%;
             }
         }
+    }
+    .separator {
+        display: flex;
+        justify-content: center;
+
+        .line {
+            border-bottom: 1px solid #dadada;
+            width: 100%;
+        }
+        img {
+            margin: 0 15px;
+        }
+    }
+}
+
+//Section1 Recipes choice
+
+.recipesChoice {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .choiceMenuContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 20px 0;
+
+        .choiceMenu {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+
+            :first-child {
+                border-left: 1px solid #b2b2b2;
+            }
+    
+            .choiceMenuButton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid #b2b2b2;
+                border-top: 1px solid #b2b2b2;
+                border-bottom: 1px solid #b2b2b2;
+                width: 155px;
+                height: 34px;
+                color: #b2b2b2;
+            }
+        }
+        .acceptMenu {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+            :first-child {
+                margin-left: 20px;
+            }
+
+            .accept {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #b2b2b2;
+                width: 155px;
+                height: 34px;
+                color: #b2b2b2;
+            }
+
+            .accept:hover {
+                background: #c7b084;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }
+
+    .title {
+        margin-top: 20px;
     }
 }
