@@ -91,27 +91,29 @@ header {
             }
         }
     }
-    .separator {
-        display: flex;
-        justify-content: center;
 
-        .line {
-            border-bottom: 1px solid #dadada;
-            width: 100%;
-        }
-        img {
-            margin: 0 15px;
-        }
+}
+
+//separator styles
+.separator {
+    display: flex;
+    justify-content: center;
+
+    .line {
+        display: block;
+        border-bottom: 1px solid #dadada;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    img {
+        margin: 0 15px;
     }
 }
 
 //Section1 Recipes choice
 
 .recipesChoice {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 
     .choiceMenuContainer {
         display: flex;
@@ -168,6 +170,67 @@ header {
     }
 
     .title {
-        margin-top: 20px;
+        margin: 20px 0;
+    }
+}
+
+//Recipes styles
+.recipes {
+    text-align: center;
+
+    .title {
+        margin: 20px 0;
+    }
+    .recipesMenuContainer {
+        display: flex;
+        justify-content: center;
+
+        .recipesMenu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            border-radius: 30px;
+            background: #f1f1f1;
+            width: 450px;
+    
+            .recipesMenuButton {
+                height: 40px;
+                width: 150px;
+                background: #f1f1f1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+            }
+    
+            .recipesMenuButton:hover {
+                background: #2f3032;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    .recipe {
+        display: flex;
+        justify-content: center;
+
+        .recipeDescription {
+            max-width: 280px;
+
+            .recipeVoteButtons {
+                display: flex;
+                justify-content: center;
+    
+                .recipeVoteButtonsValue {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .recipFooter {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
     }
 }

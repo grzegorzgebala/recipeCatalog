@@ -68,20 +68,20 @@ header .toolbar {
     right: -4px;
     background: red;
     border-radius: 50%; }
-header .separator {
+
+.separator {
   display: flex;
   justify-content: center; }
-  header .separator .line {
+  .separator .line {
+    display: block;
     border-bottom: 1px solid #dadada;
-    width: 100%; }
-  header .separator img {
+    width: 100%;
+    margin-bottom: 20px; }
+  .separator img {
     margin: 0 15px; }
 
 .recipesChoice {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column; }
+  text-align: center; }
   .recipesChoice .choiceMenuContainer {
     display: flex;
     flex-direction: row;
@@ -122,6 +122,48 @@ header .separator {
         cursor: pointer;
         color: white; }
   .recipesChoice .title {
-    margin-top: 20px; }
+    margin: 20px 0; }
+
+.recipes {
+  text-align: center; }
+  .recipes .title {
+    margin: 20px 0; }
+  .recipes .recipesMenuContainer {
+    display: flex;
+    justify-content: center; }
+    .recipes .recipesMenuContainer .recipesMenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border-radius: 30px;
+      background: #f1f1f1;
+      width: 450px; }
+      .recipes .recipesMenuContainer .recipesMenu .recipesMenuButton {
+        height: 40px;
+        width: 150px;
+        background: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px; }
+      .recipes .recipesMenuContainer .recipesMenu .recipesMenuButton:hover {
+        background: #2f3032;
+        color: white;
+        cursor: pointer; }
+  .recipes .recipe {
+    display: flex;
+    justify-content: center; }
+    .recipes .recipe .recipeDescription {
+      max-width: 280px; }
+      .recipes .recipe .recipeDescription .recipeVoteButtons {
+        display: flex;
+        justify-content: center; }
+        .recipes .recipe .recipeDescription .recipeVoteButtons .recipeVoteButtonsValue {
+          display: flex;
+          justify-content: center; }
+      .recipes .recipe .recipeDescription .recipFooter {
+        display: flex;
+        justify-content: flex-start; }
 
 /*# sourceMappingURL=style.css.map */
