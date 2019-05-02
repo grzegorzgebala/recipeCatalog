@@ -8,7 +8,7 @@
 sidebar {
     width: 160px;
     background: #2f3032;
-    height: 3500px;
+    height: 7000px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -293,25 +293,5 @@ header {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-
-        .image {
-            position: relative;
-
-            p {
-                color: white;
-                position: absolute;
-                bottom: 40px;
-                left: 80px;
-            }
-        }
     }
-}
-
-//Top Autors
-
-.topAutors {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
